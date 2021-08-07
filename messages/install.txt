@@ -1,0 +1,2 @@
+Thank you for installing PrintDebugger, a simple yet powerful tool that will help you write programs faster.
+To learn more about this plugin, please visit https://packagecontrol.io/packages/PrintDebugger or https://github.com/futureprogrammer360/PrintDebugger.

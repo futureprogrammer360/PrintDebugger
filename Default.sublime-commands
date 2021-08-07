@@ -1,0 +1,36 @@
+[
+    {
+        "caption": "Print Debugger: Print Debug",
+        "command": "print_debug"
+    },
+    {
+        "caption": "Print Debugger: Print Debug (Before and After)",
+        "command": "print_debug",
+        "args": {
+            "before_and_after": true
+        }
+    },
+    {
+        "caption": "Preferences: PrintDebugger",
+        "command": "edit_settings",
+        "args": {
+          "base_file": "${packages}/PrintDebugger/PrintDebugger.sublime-settings",
+          "default": "{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "Preferences: PrintDebugger Key Bindings",
+        "command": "edit_settings",
+        "args": {
+          "base_file": "${packages}/PrintDebugger/Default (${platform}).sublime-keymap",
+          "default": "[\n\t$0\n]\n"
+        }
+    },
+    {
+        "caption": "PrintDebugger: Open Readme",
+        "command": "open_file",
+        "args": {
+          "file": "${packages}/PrintDebugger/README.md"
+        }
+    }
+]

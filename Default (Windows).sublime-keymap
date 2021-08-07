@@ -1,0 +1,14 @@
+[
+    {
+        "keys": ["alt+d"],
+        "command": "print_debug"
+    },
+    {
+        "keys": ["alt+shift+d"],
+        "command": "print_debug",
+        "args":
+        {
+            "before_and_after": true
+        }
+    }
+]
