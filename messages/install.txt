@@ -1,2 +1,23 @@
 Thank you for installing PrintDebugger, a simple yet powerful tool that will help you write programs faster.
-To learn more about this plugin, please visit https://packagecontrol.io/packages/PrintDebugger or https://github.com/futureprogrammer360/PrintDebugger.
+
+
+How to use PrintDebugger to code faster:
+
+To print out a meaningful message containing the name and value of a variable:
+- Click on or select that variable
+- Press the `print_debug` keybinding (default is `ALT+D`)
+
+To view the values of a variable before and after a line:
+- Click on or select that variable
+- Press the `print_debug` keybinding with `before_and_after` set to `true` (default is `ALT+SHIFT+D`)
+
+To insert an empty print statement at the cursor:
+- Press the `print_debug` keybinding (default is `ALT+D`)
+
+
+How to customize PrintDebugger:
+
+To modify or add print/debug syntax, run the `Preferences: PrintDebugger` command in the command palette. Detailed instructions are in the file.
+
+
+To learn more about this plugin, please visit https://github.com/futureprogrammer360/PrintDebugger or https://packagecontrol.io/packages/PrintDebugger
