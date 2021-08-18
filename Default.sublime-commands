@@ -1,10 +1,10 @@
 [
     {
-        "caption": "Print Debugger: Print Debug",
+        "caption": "PrintDebugger: Print Debug",
         "command": "print_debug"
     },
     {
-        "caption": "Print Debugger: Print Debug (Before and After)",
+        "caption": "PrintDebugger: Print Debug (Before and After)",
         "command": "print_debug",
         "args": {
             "before_and_after": true
