@@ -20,21 +20,39 @@ How to use PrintDebugger to code faster:
 
 To print out a meaningful message containing the name and value of a variable:
 - Click on or select that variable
-- Press the `print_debug` keybinding (default is `ALT+D`)
+- Run the `PrintDebugger: Print Debug` command
 
 To view the values of a variable before and after a line:
 - Click on or select that variable
-- Press the `print_debug` keybinding with `before_and_after` set to `true` (default is `ALT+SHIFT+D`)
+- Run the `PrintDebugger: Print Debug (Before and After)` command
 
 To insert an empty print statement at the cursor:
-- Press the `print_debug` keybinding (default is `ALT+D`)
+- Run the `PrintDebugger: Print Debug` command
 
 -------------------------------------------------------------------
 
 How to customize PrintDebugger:
 
 To modify or add print/debug syntax, run the `Preferences: PrintDebugger` command in the command palette.
-To customize keybindings, run the `Preferences: PrintDebugger Key Bindings` command in the command palette.
+
+To add and customize keybindings, run the `Preferences: PrintDebugger Key Bindings` command in the command palette.
+Below is an example keybinding file:
+****************************************************
+[
+    // PrintDebugger: Print Debug
+    {
+        "keys": ["alt+d"],
+        "command": "print_debug"
+    },
+
+    // PrintDebugger: Print Debug (Before and After)
+    {
+        "keys": ["alt+shift+d"],
+        "command": "print_debug",
+        "args": { "before_and_after": true }
+    }
+]
+****************************************************
 
 -------------------------------------------------------------------
 
