@@ -1,6 +1,16 @@
 # 🤖 PrintDebugger
 
-[PrintDebugger](https://github.com/futureprogrammer360/PrintDebugger) is a [Sublime Text](https://www.sublimetext.com/) plugin that allows easy insertion of both debugging and empty print statements.
+[PrintDebugger](https://github.com/futureprogrammer360/PrintDebugger) is a fully customizable [Sublime Text](https://www.sublimetext.com/) plugin that allows easy insertion of both debugging and empty print statements.
+
+## 🎬 Demonstration
+
+`PrintDebugger: Print Debug`:
+
+<img src="demo/demo1.gif" alt="PrintDebugger: Print Debug" width="750"></img>
+
+`PrintDebugger: Print Debug (Before and After)`:
+
+<img src="demo/demo2.gif" alt="PrintDebugger: Print Debug (Before and After)" width="750"></img>
 
 ## 💻 Installation
 
@@ -30,7 +40,7 @@ The PrintDebugger plugin is fully customizable.
 
 ### 🔧 Preferences
 
-The syntax of several languages are included by default when the plugin is installed. The syntax of print/debug statements, scopes, and file extensions associated with each language can be customized. New syntax can also be added in settings.
+The syntax of several languages are included by default when the plugin is installed. The syntax of print/debug statements, scopes, and file extensions associated with each language can be customized. **New syntax can also be added in settings.**
 
 To modify or add print/debug syntax, run the `Preferences: PrintDebugger` command in the command palette.
 
