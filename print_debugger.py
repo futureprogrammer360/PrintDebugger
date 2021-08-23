@@ -10,7 +10,7 @@ class PrintDebugCommand(sublime_plugin.TextCommand):
 
         # Determine syntax
         for syntax in settings.get("syntax"):
-            if syntax["scope"] in list(scope.split(" ")) or extension in syntax["extensions"]:
+            if self.view.match_selector(self.view.sel()[0].begin(), syntax.get("scope")) or extension in syntax.get("extensions"):
                 current_syntax = syntax
                 break
         else:
