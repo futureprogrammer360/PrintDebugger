@@ -43,7 +43,7 @@ class PrintDebugCommand(sublime_plugin.TextCommand):
             selection = self.view.substr(region)  # Text selected
 
         # Insert debug statement
-        debug_statement = debug_statement.replace("!!!", selection)
+        debug_statement = debug_statement.replace("$0", selection)
         if before_and_after:
             self.view.run_command("run_macro_file", {"file": "res://Packages/Default/Add Line Before.sublime-macro"})
             self.view.run_command("insert", {"characters": debug_statement})

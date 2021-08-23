@@ -1,45 +1,44 @@
 {
     // Force double quotes in print and debug statements when true
-    // Print and debug statements use single quotes when false
     "force_double_quotes": true,
 
     // Define print/debug statement syntax for languages
-    // In "debug", !!! will be replaced by variable name selected or under cursor
+    // In "debug", $0 will be replaced by variable name selected or under cursor
     // In "print", $0 is where the cursor will end up after statement is inserted
     "syntax": [
         {
             "name": "Python",
             "scope": "source.python",
             "extensions": ["py"],
-            "debug": "print(f'{!!! = }')",
+            "debug": "print(f'{$0 = }')",
             "print": "print($0)"
         },
         {
             "name": "JavaScript",
             "scope": "source.js",
             "extensions": ["js"],
-            "debug": "console.log(`!!! = ${!!!}`);",
+            "debug": "console.log(`$0 = ${$0}`);",
             "print": "console.log($0);"
         },
         {
             "name": "Java",
             "scope": "source.java",
             "extensions": ["java"],
-            "debug": "System.out.println('!!! = ' + !!!);",
+            "debug": "System.out.println('$0 = ' + $0);",
             "print": "System.out.println($0);"
         },
         {
             "name": "C++",
             "scope": "source.c++",
             "extensions": [".cpp"],
-            "debug": "std::cout << '!!! = ' << !!! << '\\n';",
+            "debug": "std::cout << '$0 = ' << $0 << '\\n';",
             "print": "std::cout << '$0';"
         },
         {
             "name": "Go",
             "scope": "source.go",
             "extensions": [".go"],
-            "debug": "fmt.Println('!!! =', !!!)",
+            "debug": "fmt.Println('$0 =', $0)",
             "print": "fmt.Println($0);"
         }
     ]
