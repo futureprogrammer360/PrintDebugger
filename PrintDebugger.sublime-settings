@@ -30,16 +30,23 @@
         {
             "name": "C++",
             "scope": "source.c++",
-            "extensions": [".cpp"],
+            "extensions": ["cpp"],
             "debug": "std::cout << '$0 = ' << $0 << '\\n';",
             "print": "std::cout << '$0';"
         },
         {
             "name": "Go",
             "scope": "source.go",
-            "extensions": [".go"],
-            "debug": "fmt.Println('$0 =', $0)",
-            "print": "fmt.Println($0);"
+            "extensions": ["go"],
+            "debug": "fmt.Println('$0 = ', $0)",
+            "print": "fmt.Println($0)"
+        },
+        {
+            "name": "C",
+            "scope": "source.c",
+            "extensions": ["c"],
+            "debug": "printf('$0 = %s\\n', $0);",
+            "print": "printf($0);"
         }
     ]
 }
