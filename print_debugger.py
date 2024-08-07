@@ -6,7 +6,11 @@ class PrintDebugCommand(sublime_plugin.TextCommand):
     def run(self, edit, before_and_after=False):
         settings = sublime.load_settings("PrintDebugger.sublime-settings")
         scope = self.view.scope_name(self.view.sel()[0].begin())
-        extension = self.view.file_name().split(".")[-1]
+        file_name = self.view.file_name()
+        if file_name:
+            extension = file_name.split(".")[-1]
+        else:  # In blank view without file open
+            extension = ""
 
         # Determine syntax
         for syntax in settings.get("syntax"):
@@ -15,7 +19,7 @@ class PrintDebugCommand(sublime_plugin.TextCommand):
                 break
         else:
             sublime.error_message(
-                f"No syntax found for the current scope ({scope.split(' ')[0]}) and extension ({extension}). Maybe you forgot to define the syntax in PrintDebugger.sublime-settings?"
+                f"No syntax found for the current scope ({scope.split(' ')[0]}) and extension ({extension or 'not found'}). Maybe you forgot to define the syntax in PrintDebugger.sublime-settings?"
             )
             return
 
