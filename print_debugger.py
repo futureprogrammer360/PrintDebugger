@@ -18,9 +18,10 @@ class PrintDebugCommand(sublime_plugin.TextCommand):
                 current_syntax = syntax
                 break
         else:
-            sublime.error_message(
-                f"No syntax found for the current scope ({scope.split(' ')[0]}) and extension ({extension or 'not found'}). Maybe you forgot to define the syntax in PrintDebugger.sublime-settings?"
-            )
+            if settings.get("show_error_message"):
+                sublime.error_message(
+                    f"No syntax found for the current scope ({scope.split(' ')[0]}) and extension ({extension or 'not found'}). Maybe you forgot to define the syntax in PrintDebugger.sublime-settings?"
+                )
             return
 
         # Determine debug and print statements

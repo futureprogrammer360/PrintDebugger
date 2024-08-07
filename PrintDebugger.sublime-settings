@@ -2,6 +2,9 @@
     // Force double quotes in print and debug statements when true
     "force_double_quotes": true,
 
+    // Whether an error message should be shown when no syntax is matched
+    "show_error_message": true,
+
     // Define print/debug statement syntax for languages
     // In "debug", $0 will be replaced by variable name selected or under cursor
     // In "print", $0 is where the cursor will end up after statement is inserted
